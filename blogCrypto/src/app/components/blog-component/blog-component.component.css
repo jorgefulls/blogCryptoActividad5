@@ -1,0 +1,59 @@
+.color_texto_rojo {
+    color: darkred;
+}
+
+.image_size {
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.estilo_caja {
+    border: solid 1px gray;
+    margin-bottom: 50px;
+    padding: 40px;
+}
+
+.componente_blog {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.listado {
+    width: 60%;
+}
+
+.formulario {
+    width: 40%;
+}
+
+.formulario div {
+    margin: 40px;
+}
+
+.texto_derecha {
+    text-align: right;
+    padding: 10px;
+}
+
+.entrada_post {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+hr {
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    width: 100%
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+}
