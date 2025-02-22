@@ -1,3 +1,5 @@
+/* Hoja de estilo del componente BlogComponent */
+
 .color_texto_rojo {
     color: darkred;
 }
@@ -9,15 +11,13 @@
 
 .estilo_caja {
     border: solid 1px gray;
-    margin-bottom: 50px;
     padding: 40px;
+    margin: 5px;
 }
 
 .componente_blog {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-
 }
 
 .listado {
@@ -29,7 +29,7 @@
 }
 
 .formulario div {
-    margin: 40px;
+    padding: 10px;
 }
 
 .texto_derecha {
@@ -50,10 +50,32 @@ hr {
 input {
     display: block;
     padding: 10px;
-    width: 100%
+    width: 100%;
+    box-sizing: border-box;
 }
 
-button {
-    padding: 10px;
+.boton-verde {
     width: 100%;
+    background-color: #4CAF50;
+    
+    /* Estilos básicos */
+    color: white;
+    padding: 10px 0px 10px 0px;
+    border: 2px solid black;
+    border-radius: 4px;
+    
+    /* Sombras y efectos */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    /* Transiciones suaves */
+    transition: all 0.3s ease;
+    
+    /* Cursor y hover */
+    cursor: pointer;
+}
+
+.boton-verde:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
 }
