@@ -1,0 +1,55 @@
+<section class="componente_blog">
+
+    <!-- Área de Formulario de entrada de noticias -->
+    <div class="formulario estilo_caja">
+
+        <div>
+            <h1>Crear nuevo post:</h1>
+        </div>
+
+        <div>
+            <label for="titulo">Título de la noticia:</label>
+            <input id="titulo" type="text" placeholder="Título de la nueva publicación..." required [(ngModel)]="postFormulario.titulo">
+        </div>
+
+        <div>
+            <label for="imagen">URL imagen de la noticia:</label>
+            <input id="imagen" type="url" placeholder="Introduce URL válida de imagen de la cripto de la que habla la noticia..." required [(ngModel)]="postFormulario.imagen">
+        </div>
+
+        <div>
+            <label for="texto">Texto o cuerpo de la noticia:</label>
+            <input id="texto" type="text" placeholder="Contenido de la publicación..." required [(ngModel)]="postFormulario.texto">
+        </div>
+
+        <div>
+            <label for="fecha">Fecha de la noticia:</label>
+            <input id="fecha" type="date" placeholder="Fecha de la publicación..." min="2020-01-01" max="2030-12-31" required [(ngModel)]="postFormulario.fechaPublicacion">
+        </div>
+
+        <div>
+            <button (click)="addPost()" class="boton-verde">Crear nueva entrada en blog</button>
+        </div>
+
+    </div>
+    
+    <!-- Área de Listado de noticias -->
+    <div class="listado estilo_caja">
+
+        <h1 class="texto_derecha">Número de posts: {{contadorPosts()}}</h1>
+
+        <div [class]="property_color_texto" *ngFor="let postindividual of posts">
+            <h3><img [src]="postindividual.imagen" alt="Imagen de la noticia." [class]="property_img_size">{{postindividual.titulo}}</h3>
+            <p class="entrada_post">{{postindividual.texto}}</p>
+            <p class="texto_derecha">{{postindividual.fechaPublicacion}}</p>
+            <hr>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+

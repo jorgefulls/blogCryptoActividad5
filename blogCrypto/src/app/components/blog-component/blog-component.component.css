@@ -1,0 +1,81 @@
+/* Hoja de estilo del componente BlogComponent */
+
+.color_texto_rojo {
+    color: darkred;
+}
+
+.image_size {
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.estilo_caja {
+    border: solid 1px gray;
+    padding: 40px;
+    margin: 5px;
+}
+
+.componente_blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listado {
+    width: 60%;
+}
+
+.formulario {
+    width: 40%;
+}
+
+.formulario div {
+    padding: 10px;
+}
+
+.texto_derecha {
+    text-align: right;
+    padding: 10px;
+}
+
+.entrada_post {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+hr {
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.boton-verde {
+    width: 100%;
+    background-color: #4CAF50;
+    
+    /* Estilos básicos */
+    color: white;
+    padding: 10px 0px 10px 0px;
+    border: 2px solid black;
+    border-radius: 4px;
+    
+    /* Sombras y efectos */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    /* Transiciones suaves */
+    transition: all 0.3s ease;
+    
+    /* Cursor y hover */
+    cursor: pointer;
+}
+
+.boton-verde:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
